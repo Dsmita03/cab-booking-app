@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container fills the full height of the viewport */
+    box-sizing: border-box; /* Include padding/border in the total height */
+}
+
+header {
+    position: absolute; /* Position header in a specific spot */
+    top: 8px; /* Position at the top */
+    left: 8px; /* Position at the left */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    padding: 5px 10px; /* Adjust padding for smaller size */
+    border-radius: 2px; /* Rounded edges */
+    font-size: 10px; /* Smaller, readable font */
+    font-weight: bold; /* Emphasize the header text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    z-index: 10; /* Ensure it stays above other elements */
+}
+
+main {
+    flex: 1; /* Expand to take available space between header and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+ 

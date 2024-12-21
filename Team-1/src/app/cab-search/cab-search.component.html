@@ -1,0 +1,27 @@
+<div class="cab-search-page">
+  <!-- Left Side Form Container -->
+  <div class="cab-search-container">
+    <h2>Cab Search</h2>
+    <form (ngSubmit)="searchCab()">
+      <div class="form-group">
+        <label for="pickup">Pickup Location:</label>
+        <input id="pickup" type="text" [(ngModel)]="pickupLocation" name="pickupLocation" required />
+      </div>
+      <div class="form-group">
+        <label for="destination">Destination:</label>
+        <input id="destination" type="text" [(ngModel)]="destination" name="destination" required />
+      </div>
+      <button type="submit" [disabled]="!pickupLocation || !destination">Search</button>
+    </form>
+
+    <!-- Display Result -->
+    <div *ngIf="result" class="result">
+      {{ result }}
+    </div>
+  </div>
+
+  <!-- Right Side Image Box -->
+  <div class="image-box">
+    <img src="assets/cab.png" alt="Cab Image" />
+  </div>
+</div>
