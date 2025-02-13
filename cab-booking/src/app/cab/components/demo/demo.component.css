@@ -1,0 +1,103 @@
+/* Full Page Styling - Centering the Form */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* Centering the Login Box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Login Box */
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Input Groups */
+.input-group {
+    text-align: left;
+    margin: 15px 0;
+}
+
+/* Make all input fields and select dropdown the same size */
+input, select {
+    width: 100%;
+    padding: 6px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    outline: none;
+}
+
+/* Fix select dropdown size */
+select {
+    appearance: none; /* Removes default styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+/* Forgot Password */
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #4a90e2;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 20px;
+    }
+}
